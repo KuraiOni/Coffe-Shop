@@ -34,7 +34,8 @@ public class Main {
             x++;
         }
 
-        System.out.println("Here's your check: " + sum);
+        System.out.println("Here's your check: " + sum + " L.L.");
+        System.out.println("Thank you for visiting us (:");
 
         // switch (order) {
         // case "MilkShake":
