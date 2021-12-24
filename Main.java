@@ -8,6 +8,7 @@ public class Main {
         int[] total = new int[1000];
         int sum = 0;
 
+        //HashMap acts as a Menu
         Menu.put("MilkShake", 30000);
         Menu.put("MilkShake-Oreo", 35000);
         Menu.put("Frappe", 35000);
@@ -17,16 +18,19 @@ public class Main {
         Menu.put("Fruit-Mix", 30000);
         Menu.put("Press here if your done or don't want to order (:", 0);
 
-        System.out.println("Good Morning Sir...Here is out Menu!! Choose what you like!!");
+        System.out.println("Good Morning Sir...Here is our Menu!! Choose what you like!!");
 
+        //Inorder to print out the Menu
         for (String i : Menu.keySet()) {
             System.out.print(i);
             System.out.println(" = " + Menu.get(i));
         }
 
+        //The Customer enters his choice
         Scanner scanner = new Scanner(System.in);
         String order = "";
 
+        //The choice of the customer is put in an array to calc the price
         while (!order.equals("Press here if your done or don't want to order (:")) {
             order = scanner.nextLine();
             total[x] = Menu.get(order);
@@ -65,6 +69,7 @@ public class Main {
         // total[i] = Menu.get(order);
         // sum = sum + total[i];
         // }
+
 
     }
 
